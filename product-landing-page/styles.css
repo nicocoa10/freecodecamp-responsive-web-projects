@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.logo {
+    margin-top: 1rem;
+}
+
+.logo-img {
+    width: 70%;
+    max-width: 400px;
+}
+
+ul {
+    margin-top: 0px;
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: rgb(34, 34, 34);
+    font-size: 14px;
+}
+
+.title {
+
+    font-size: 1.2rem;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+    max-width: 350px;
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-title {
+    /* border: 1px solid red; */
+    font-size: 1.15rem;
+}
+
+.email-input {
+    width: 60%;
+    margin-bottom: 1rem;
+}
+
+#submit {
+    background-color: rgb(255, 208, 0);
+    border: none;
+    padding: .5em 2em;
+    font-weight: 800;
+}
+
+#form-section {
+    /* margin-bottom: 80px; */
+}
+
+i {
+    visibility: hidden;
+}
+
+#features {
+    margin-bottom: 80px;
+}
+
+.video-section iframe {
+    width: 100%;
+}
+
+#how-it-works {
+    margin-bottom: 80px;
+}
+
+.pricing-card {
+    border: 1px solid black;
+    margin-bottom: .5rem;
+    width: 65%;
+    padding-bottom: .7rem;
+}
+
+.pricing-title {
+    background-color: gray;
+    padding-top: .1rem;
+    padding-bottom: .1rem;
+    font-size: 12px;
+}
+
+.pricing-text {
+    margin: 0 1rem;
+}
+
+.pricing-text p {
+    line-height: 1.5rem;
+}
+
+.pricing-text button {
+    background-color: rgb(255, 208, 0);
+    border: none;
+    padding: .5em 2em;
+
+}
+
+footer {
+    background-color: gray;
+    padding: 1rem 0;
+
+}
+
+.footer-nav {
+    text-align: right;
+    margin-right: 1rem;
+}
+
+.footer-nav ul {
+    display: flex;
+    gap: .5rem;
+    justify-content: right;
+}
+
+.copyright-section {
+    font-size: 12px;
+}
