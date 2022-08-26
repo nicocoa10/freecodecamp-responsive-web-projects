@@ -2,15 +2,32 @@
     box-sizing: border-box;
 }
 
+:root {
+    font-size: 15px;
+}
+
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
-.logo {
-    margin-top: 1rem;
+header {
+    background-color: rgb(201, 201, 201);
+    position: fixed;
+    left: 0;
+    right: 0;
 }
+
+button,
+#submit {
+    cursor: pointer;
+}
+
+button,
+#submit:hover {
+    opacity: 80%;
+}
+
 
 .logo-img {
     width: 70%;
@@ -31,6 +48,10 @@ ul li a {
 .title {
 
     font-size: 1.2rem;
+}
+
+header {
+    padding-top: .5rem;
 }
 
 .container {
@@ -64,7 +85,8 @@ ul li a {
 }
 
 #form-section {
-    /* margin-bottom: 80px; */
+    /* border: 1px solid red; */
+    padding-top: 112px;
 }
 
 i {
@@ -112,6 +134,7 @@ i {
 
 }
 
+
 footer {
     background-color: gray;
     padding: 1rem 0;
@@ -131,4 +154,103 @@ footer {
 
 .copyright-section {
     font-size: 12px;
+}
+
+@media (min-width:450px) {
+
+
+
+    .container {
+        text-align: left;
+        max-width: 400px;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .logo {
+        width: 65%;
+    }
+
+
+    .nav-bar {
+        width: 35%;
+    }
+
+    .navbar-links {
+        text-align: center;
+    }
+
+    i {
+        visibility: visible;
+        width: 20%;
+        color: rgb(233, 152, 71);
+    }
+
+    .features-section-text {
+        width: 80%;
+    }
+
+    #features {
+        margin-top: 2rem;
+    }
+
+    .pricing-card {
+        text-align: center;
+    }
+
+    .pricing-text {
+        margin: 0 4rem;
+    }
+}
+
+@media (min-width:550px) {
+
+    .container {
+        max-width: 600px;
+    }
+
+    header {
+        padding: 1rem 0;
+    }
+
+    .logo {
+        width: 50%;
+    }
+
+
+    .nav-bar {
+        width: 50%;
+    }
+
+    .row {
+        align-items: center;
+    }
+
+
+    .navbar-links {
+        padding-top: .5rem;
+
+        display: flex;
+        gap: 1rem;
+    }
+
+    .pricing-card {
+
+        width: 30%;
+        margin-bottom: 2rem;
+    }
+
+    .pricing-text {
+        margin: 0 1rem;
+    }
+
+    .row-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
