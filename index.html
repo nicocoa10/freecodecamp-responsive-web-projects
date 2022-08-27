@@ -4,20 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,200&family=Raleway:wght@700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
     <title>Personal Portfolio</title>
 </head>
 <body>
     <header class="nav-header">
-        <div class="container">
-            <div class="logo">
-                <div class="logo-content">Nicolas <span class="cursor">I</span></div>
+        <div class="navbar container row">
+            <div class="logo row">
+                <div class="logo-content">Nicolas</div><span class="cursor"></span>
             </div>
             <nav>
                 <ul class="nav-list row">
-                    <li class="nav-item"><a href="" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">Work</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">Contact</a></li>                 
+                    <li class="nav-item"><a href="#welcome-section" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Work</a></li>
+                    <li class="nav-item"><a href="#lets-work-together" class="nav-link">Contact</a></li>                 
                 </ul>
             </nav>
         </div>
@@ -39,7 +44,7 @@
                 <div class="separator project-section-title-separator"></div>
             </div>
             <div class="projects">
-                <div class="row-projects">
+                <div class="row-projects col">
                     <a href="https://github.com/nicocoa10/monsters-rodolex-react" class="project-link">
                         <div class="project-card project-tile">
                             <div class="card-img">
@@ -50,7 +55,7 @@
                             </div>
                         </div>    
                     </a>
-                    <a href="https://github.com/nicocoa10/monsters-rodolex-react" class="project-link">
+                    <a href="https://github.com/nicocoa10/singro/blob/master/README.md" class="project-link">
                         <div class="project-card project-tile">
                             <div class="card-img">
                                 <img src="images/Screen Shot 2021-07-30 at 11.09 2.png" alt="">
@@ -60,7 +65,7 @@
                             </div>
                         </div>    
                     </a>
-                    <a href="https://github.com/nicocoa10/monsters-rodolex-react" class="project-link">
+                    <a href="https://github.com/nicocoa10/MoonTrekTelescopeV2/blob/master/README.md" class="project-link">
                         <div class="project-card project-tile">
                             <div class="card-img">
                                 <img src="images/Screen Shot 2022-04-02 at 4.03 2.png" alt="">
@@ -73,93 +78,102 @@
 
 
                 </div>
-                <div class="row-projects">
-                    <a href="https://github.com/nicocoa10/monsters-rodolex-react" class="project-link">
+                <div class="row-projects col">
+                    <a href="https://nicocoa10.github.io/gamewebsite/" class="project-link">
                         <div class="project-card project-tile">
                             <div class="card-img">
-                                <img src="images/142217672-8845c997-8321-4aa6-8ed7-e13964da73d8 1.png" alt="">
+                                <img src="images/Screen Shot 2022-04-02 at 4.08 2.png" alt="">
                             </div>
                             <div class="project-card-text">
-                                <div class="project-name"><span class="bracket-animation"><</span>React Monsters Rodolex<span class="bracket-animation">/></span></div>
+                                <div class="project-name"><span class="bracket-animation"><</span>GameBrand Home Page<span class="bracket-animation">/></span></div>
                             </div>
                         </div>    
                     </a>
-                    <a href="https://github.com/nicocoa10/monsters-rodolex-react" class="project-link">
+                    <a href="tehcnical-documentation/index.html" class="project-link">
                         <div class="project-card project-tile">
                             <div class="card-img">
-                                <img src="images/Screen Shot 2021-07-30 at 11.09 2.png" alt="">
+                                <img src="images/Screen Shot 2022-08-25 at 7.53 1.png" alt="">
                             </div>
                             <div class="project-card-text">
-                                <div class="project-name"><span class="bracket-animation"><</span>Singro Music Blog<span class="bracket-animation">/></span></div>
+                                <div class="project-name"><span class="bracket-animation"><</span>freeCodeCamp Technical Blog<span class="bracket-animation">/></span></div>
                             </div>
                         </div>    
                     </a>
-                    <a href="https://github.com/nicocoa10/monsters-rodolex-react" class="project-link">
+                    <a href="product-landing-page/index.html" class="project-link">
                         <div class="project-card project-tile">
                             <div class="card-img">
-                                <img src="images/Screen Shot 2022-04-02 at 4.03 2.png" alt="">
+                                <img src="images/Screen Shot 2022-08-25 at 7.53 2.png" alt="">
                             </div>
                             <div class="project-card-text">
-                                <div class="project-name"> <span class="bracket-animation"><</span> Mootrek Telescope <span class="bracket-animation">/></span></div>
+                                <div class="project-name"> <span class="bracket-animation"><</span>freeCodeCamp Product Landing<span class="bracket-animation">/></span></div>
                             </div>
                         </div>    
                     </a>
-
 
                 </div>
+                <div class="button-section">
+                    <a href="https://nicocoa10.github.io/personal_portfolio_2022/"><button class="portfolio-button-to-real">Check my Real Portfolio</button></a>
+
+                </div>
+
             </div>
         </div>
     </section>
 
     <section id="lets-work-together" class="social-section">
 
-        <div class="container">
-            <div class="hero-text-section">
+        <div class="">
+            <div class="footer-text-section footer-text">
                 <h1 class="title social-title">Let's work together...</h1>
                 <div class="social-subtitle">How do you take your coffee?
                 </div>
             </div>
             <div class="socials">
-                <ul>
+                <ul class="row">
                     <li class="social-item">
-                        <a href="">
-                        <i class="fab fa-facebook-square"></i>
-                        <div class="social-name">Facebook</div>
+                        <a href="https://www.linkedin.com/in/nojeda3/" class="social-link row">
+                        <i class="fab fa-linkedin"></i>
+                        <div class="social-name">Linkedin</div>
                         </a>
                         <li class="social-item">
-                            <a href="">
+                            <a href="https://github.com/nicocoa10" class="social-link row">
                             <i class="fab fa-github"></i>
                             <div class="social-name">Github</div>
                             </a>
                         </li>
                         <li class="social-item">
-                            <a href="">
-                            <i class="fab fa-twitter"></i>
-                            <div class="social-name">Twitter</div>
+                            <a href="https://www.tiktok.com/@dreamerintotech?lang=en" class="social-link row">
+                                <i class="fa-brands fa-tiktok"></i>
+                            <div class="social-name">Tik Tok</div>
                             </a>
                         </li>
                         <li class="social-item">
-                            <a href="">
+                            <a href="nicolas.ojeda71@gmail.com" class="social-link row">
                             <i class="fas fa-at"></i>
                             <div class="social-name">Send a mail</div>
                             </a>
                         </li>
                         <li class="social-item">
-                            <a href="">
+                            <a href="" class="social-link row">
                             <i class="fas fa-mobile-alt"></i>
                             <div class="social-name">Call Me</div>
                             </a>
                         </li>
                     </li>
                 </ul>
+                
             </div>
         </div>
     </section>
 
-    <footer id="footer">
+    <footer id="footer-section" class="">
 
-        <div class="disclaimer">**This is just a fake portfolio. All the projects and contact details given are not real.</div>
-        <div class="copyright">© Created for freeCodeCamp by <a href="https://nicocoa10.github.io/personal_portfolio_2022/">Nicolas Ojeda</a> </div>
+        <div class="footer container row">
+            <div class="disclaimer">**This portfolio was made for freeCodeCamp final project of the responsive web design certification. Please check my actual portfolio <a  class='portfolio-link' href="https://nicocoa10.github.io/personal_portfolio_2022/">here</a></div>
+            <div class="copyright">© Created for freeCodeCamp by <a class='portfolio-link'href="https://nicocoa10.github.io/personal_portfolio_2022/">Nicolas Ojeda</a> </div>
+        </div>
+
+      
     </footer>
 </body>
 </html>

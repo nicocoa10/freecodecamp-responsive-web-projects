@@ -1,0 +1,285 @@
+* {
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+:root {
+    --main-theme-color: rgb(12, 187, 138);
+    --background--color: rgb(29, 30, 31);
+    --font-color: white;
+    --hovering-color: rgb(76, 76, 150);
+    --second-background-color: rgb(69, 71, 123);
+
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background--color);
+    color: var(--font-color);
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 56px;
+}
+
+/* Layouting section */
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid red; */
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+body::-webkit-scrollbar {
+    width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+}
+
+header {
+    background-color: var(--main-theme-color);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.navbar {
+    padding: 0px 0px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    /* gap: 1.5rem; */
+}
+
+.logo-content {
+    margin-right: 4px;
+}
+
+.cursor {
+    width: .5rem;
+    height: 1.5rem;
+    background-color: var(--hovering-color);
+    animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 0%;
+    }
+}
+
+*.nav-item {
+    cursor: pointer;
+    height: 100%;
+    /* border: 1px solid red; */
+    padding: 0px 16px;
+
+
+}
+
+
+*.nav-item:hover {
+    background-color: var(--hovering-color);
+}
+
+.hero {
+    height: 100vh;
+
+}
+
+.hero-text-section {
+    text-align: center;
+    margin-top: 75%;
+
+}
+
+.hero-subtitle {
+    color: var(--main-theme-color);
+    font-style: italic;
+    font-size: 28px;
+    margin-top: -2rem;
+}
+
+.project-section {
+    background-color: var(--second-background-color);
+    padding: 2rem 0;
+}
+
+.project-section-text {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.project-section-title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 39px;
+}
+
+.separator {
+    width: 100%;
+    background-color: white;
+    height: 2px;
+    margin-bottom: 1rem;
+    margin-top: -.9rem;
+
+
+}
+
+.card-img img {
+    width: 100%;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+
+}
+
+.bracket-animation {
+
+    color: var(--background--color);
+    margin: 0 3px;
+    transition: color 0.3s ease-out;
+
+
+}
+
+
+.project-card:hover .bracket-animation {
+    color: var(--main-theme-color);
+}
+
+
+.project-card {
+    /* border: 1px solid red; */
+    border-radius: 5%;
+    margin-bottom: 2.5rem;
+    background-color: var(--background--color);
+}
+
+.project-card-text {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.button-section {
+    text-align: center;
+}
+
+.portfolio-button-to-real {
+    padding: .7em 1.2rem;
+    background-color: var(--background--color);
+    border: none;
+    color: white;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+.portfolio-button-to-real:hover {
+    opacity: 80%;
+    transition: 0.5s ease-out;
+
+}
+
+.social-subtitle {
+    margin: -2rem;
+    font-style: italic;
+    margin-bottom: 2rem;
+
+}
+
+.social-item+.social-item {
+    margin-left: 1rem;
+}
+
+.social-link {
+    gap: .5rem;
+    align-items: center;
+}
+
+.social-section {
+    margin-bottom: 10rem;
+}
+
+footer {
+    padding-top: 2rem;
+    font-size: 17px;
+    border-top: 2px solid var(--main-theme-color);
+    padding-bottom: 2rem;
+}
+
+.footer {
+    gap: 8px;
+}
+
+.disclaimer {
+    width: 75%;
+}
+
+.copyright {
+    width: 25%;
+}
+
+.portfolio-link {
+    color: var(--main-theme-color);
+}
+
+.socials ul {
+    font-size: 16px;
+}
+
+.footer-text-section {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+@media (min-width: 800px) {
+    .container {
+        max-width: 1000px;
+    }
+
+    .row-projects {
+        flex-direction: row;
+        gap: 1.2rem;
+    }
+
+    .socials ul {
+        justify-content: center;
+        font-size: 19px;
+    }
+}
